@@ -27,7 +27,7 @@ public class HomePageTest extends Base {
         assertEquals("darek",  inGen.getName());
     }
 
-    //@Regression
+    @Regression
     @Tag("TwentyFourHours")
     @DisplayName("Home Page - logged successfully")
     public void LinkedLogin_01() {

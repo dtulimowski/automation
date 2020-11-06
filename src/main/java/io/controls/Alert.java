@@ -1,4 +1,4 @@
-package io.jobee.controls;
+package io.controls;
 
 public class Alert {
     /*

@@ -11,10 +11,10 @@ import org.junit.jupiter.api.extension.*;
 import java.util.Arrays;
 import java.util.Optional;
 
-public class Preconditions implements BeforeAllCallback, AfterAllCallback, TestWatcher, BeforeTestExecutionCallback {
+public class ReportListener implements BeforeAllCallback, AfterAllCallback, TestWatcher, BeforeTestExecutionCallback {
     public ExtentTest test;
     private ExtentReports report;
-    private final String path = UrlMaker.make("io/reports", "html");
+    private final String path = UrlMaker.make("reports", "html");
 
     @Override
     public void beforeAll(ExtensionContext context){

@@ -1,4 +1,4 @@
-package io.jobee.other;
+package io.other;
 
 public class UrlMaker {
     public static String make(String dir, String extension) {

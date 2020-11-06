@@ -1,1 +1,4 @@
+tests/TestConfig.class
+tests/TestCore.class
+tests/Base.class
 tests/HomePageTest.class

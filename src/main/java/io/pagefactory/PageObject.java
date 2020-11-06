@@ -1,4 +1,4 @@
-package io.jobee.pagefactory;
+package io.pagefactory;
 
 import com.github.metalloid.core.Metalloid;
 

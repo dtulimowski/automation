@@ -1,0 +1,12 @@
+
+spring:
+  profiles: dev
+
+
+---
+
+spring:
+  profiles: qa
+  user: darotm@gmail.com
+    password: darotm1986
+      url: https://www.linkedin.com

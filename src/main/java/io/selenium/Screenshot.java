@@ -1,4 +1,4 @@
-package io.jobee.selenium;
+package io.selenium;
 
 import com.github.metalloid.webdriver.WebDriverPool;
 import io.qameta.allure.Allure;

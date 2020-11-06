@@ -1,10 +1,10 @@
-package io.jobee.pagefactory.linkedin.dashboard;
+package io.pagefactory.linkedin.dashboard;
 
 import com.github.metalloid.pagefactory.FindBy;
 import com.github.metalloid.webdriver.utils.Inject;
 import com.github.metalloid.webdriver.utils.Wait;
 import org.openqa.selenium.WebElement;
-import io.jobee.pagefactory.PageObject;
+import io.pagefactory.PageObject;
 
 import java.util.List;
 

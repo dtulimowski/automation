@@ -1,4 +1,4 @@
-package io.jobee.other;
+package io.other;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

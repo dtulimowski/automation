@@ -1,4 +1,4 @@
-package io.jobee.selenium;
+package io.selenium;
 
 public class Runner {
     public static void main(String[] args) {

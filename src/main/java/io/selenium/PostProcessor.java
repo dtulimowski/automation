@@ -1,4 +1,4 @@
-package io.jobee.selenium;
+package io.selenium;
 
 import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;

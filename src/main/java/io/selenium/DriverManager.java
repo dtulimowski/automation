@@ -1,4 +1,4 @@
-package io.jobee.selenium;
+package io.selenium;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

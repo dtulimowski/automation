@@ -1,4 +1,4 @@
-package io.jobee.reports;
+package io.reports;
 
 import com.aventstack.extentreports.reporter.configuration.ExtentSparkReporterConfig;
 import com.aventstack.extentreports.reporter.configuration.Theme;

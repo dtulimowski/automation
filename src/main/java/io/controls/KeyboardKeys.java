@@ -1,4 +1,4 @@
-package io.jobee.controls;
+package io.controls;
 
 
 import com.github.metalloid.webdriver.WebDriverPool;

@@ -2,29 +2,21 @@ package tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import other.InGen;
-import pagefactory.Base;
-import selenium.groups.Regression;
+import io.other.InGen;
+import io.selenium.groups.Regression;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@ExtendWith(SpringExtension.class)
-@SpringBootTest()
 public class HomePageTest extends Base {
 
     @Autowired
-    InGen inGen;
+    private InGen inGen;
 
-    @Regression
-    @Tag("TwentyFourHours")
-    @DisplayName("Spring test running")
+    //@Regression
+    @DisplayName("Spring first test")
     public void SpringTest() {
-        assertEquals("darek",  inGen.getName());
+        assertEquals("Darek", inGen.getName());
     }
 
     @Regression
@@ -41,7 +33,6 @@ public class HomePageTest extends Base {
                 .datePostedTwentyFourHours()
                 .datePostedApply()
                 .results("");
-        assertEquals("darek",  inGen.getName());
     }
 
     //@Regression

@@ -1,4 +1,4 @@
-package io.jobee.restassured;
+package io.restassured;
 
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;

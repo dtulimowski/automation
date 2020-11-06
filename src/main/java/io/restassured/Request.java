@@ -1,4 +1,4 @@
-package io.jobee.restassured;
+package io.restassured;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

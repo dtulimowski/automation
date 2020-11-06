@@ -1,4 +1,4 @@
-package io.jobee.selenium.browser;
+package io.selenium.browser;
 
 import com.github.metalloid.webdriver.Options;
 import org.openqa.selenium.firefox.FirefoxOptions;

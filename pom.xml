@@ -86,11 +86,20 @@
     </build>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.github.metalloid-project/metalloid-core -->
+
+        <!-- https://mvnrepository.com/artifact/org.testcontainers/selenium -->
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>selenium</artifactId>
+            <version>1.15.0-rc2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.metalloid-project/metalloid-core-->
         <dependency>
             <groupId>com.github.metalloid-project</groupId>
             <artifactId>metalloid-core</artifactId>
-            <version>2.2.0</version> <!-- 2.1.0-->
+            <version>2.2.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
@@ -138,62 +147,36 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.7.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>1.7.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
             <version>2.13.6</version>
             <scope>compile</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <version>2.3.4.RELEASE</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>4.3.7.RELEASE</version>
-            <scope>compile</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.3.4.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
-            <version>1.5.20.BUILD-SNAPSHOT</version>
-            <scope>compile</scope>
+            <version>2.3.4.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>1.5.20.BUILD-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
     </dependencies>
 
     <profiles>
@@ -203,6 +186,7 @@
             </activation>
             <id>qa</id>
             <properties>
+                <spring.profiles.active>qa</spring.profiles.active>
                 <environment>src/main/resources/qa.properties.txt</environment>
             </properties>
         </profile>
@@ -212,7 +196,7 @@
             </activation>
             <id>chrome</id>
             <properties>
-                <chrome.options>jobseeker.selenium.browser.LinkedChromeOptions</chrome.options>
+                <chrome.options>jobseeker.io.selenium.browser.LinkedChromeOptions</chrome.options>
                 <browser.name>chrome</browser.name>
                 <HEADLESS>true</HEADLESS>
                 <browser.type>local</browser.type>
@@ -224,7 +208,7 @@
             </activation>
             <id>firefox</id>
             <properties>
-                <firefox.options>jobseeker.selenium.browser.LinkedFirefoxOptions</firefox.options>
+                <firefox.options>jobseeker.io.selenium.browser.LinkedFirefoxOptions</firefox.options>
                 <browser.name>firefox</browser.name>
                 <HEADLESS>false</HEADLESS>
                 <browser.type>local</browser.type>

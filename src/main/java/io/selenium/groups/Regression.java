@@ -1,4 +1,4 @@
-package io.jobee.selenium.groups;
+package io.selenium.groups;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

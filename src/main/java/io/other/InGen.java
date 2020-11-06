@@ -1,4 +1,4 @@
-package io.jobee.other;
+package io.other;
 
 import org.springframework.stereotype.Component;
 

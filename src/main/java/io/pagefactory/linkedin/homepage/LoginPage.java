@@ -1,10 +1,10 @@
-package io.jobee.pagefactory.linkedin.homepage;
+package io.pagefactory.linkedin.homepage;
 
 import com.github.metalloid.pagefactory.FindBy;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
-import io.jobee.pagefactory.PageObject;
-import io.jobee.pagefactory.linkedin.dashboard.Dashboard;
+import io.pagefactory.PageObject;
+import io.pagefactory.linkedin.dashboard.Dashboard;
 
 public class LoginPage extends PageObject {
     private final String user = System.getProperty("user");

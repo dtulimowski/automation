@@ -1,4 +1,4 @@
-package io.jobee.controls;
+package io.controls;
 
 import com.github.metalloid.pagefactory.controls.Control;
 import org.openqa.selenium.By;

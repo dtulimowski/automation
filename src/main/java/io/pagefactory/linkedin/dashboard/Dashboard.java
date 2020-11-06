@@ -1,9 +1,9 @@
-package io.jobee.pagefactory.linkedin.dashboard;
+package io.pagefactory.linkedin.dashboard;
 
 import com.github.metalloid.pagefactory.FindBy;
 import com.github.metalloid.webdriver.utils.Inject;
 import com.github.metalloid.webdriver.utils.JavaScript;
-import io.jobee.pagefactory.PageObject;
+import io.pagefactory.PageObject;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 

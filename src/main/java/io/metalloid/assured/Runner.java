@@ -1,4 +1,4 @@
-package io.restassured;
+package io.assured;
 
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;

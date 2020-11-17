@@ -1,10 +1,11 @@
 package tests;
 
+import io.metalloid.other.InGen;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
-import io.other.InGen;
-import io.selenium.groups.Regression;
+import io.metalloid.groups.Regression;
+import org.springframework.beans.factory.annotation.Value;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -13,13 +14,17 @@ public class HomePageTest extends Base {
     @Autowired
     private InGen inGen;
 
-    //@Regression
-    @DisplayName("Spring first test")
-    public void SpringTest() {
-        assertEquals("Darek", inGen.getName());
-    }
+    @Value("${values.test}")
+    private String test;
 
     @Regression
+    @DisplayName("Spring first test")
+    public void SpringTest() {
+        System.out.println("\n\nvalue: " + test);
+        //assertEquals("Darek", inGen.getName());
+    }
+
+    //@Regression
     @Tag("TwentyFourHours")
     @DisplayName("Home Page - logged successfully")
     public void LinkedLogin_01() {

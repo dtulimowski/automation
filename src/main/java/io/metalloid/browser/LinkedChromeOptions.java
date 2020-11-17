@@ -1,4 +1,4 @@
-package io.selenium.browser;
+package metalloid.browser;
 
 import com.github.metalloid.webdriver.Options;
 import org.openqa.selenium.UnexpectedAlertBehaviour;

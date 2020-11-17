@@ -1,7 +1,7 @@
 package tests;
 
 import io.qameta.allure.Step;
-import io.pagefactory.linkedin.homepage.HomePage;
+import io.metalloid.pagefactory.linkedin.homepage.HomePage;
 
 @TestCore
 public class Base {

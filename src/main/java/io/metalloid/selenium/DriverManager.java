@@ -1,4 +1,5 @@
-package io.selenium;
+package metalloid.selenium;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

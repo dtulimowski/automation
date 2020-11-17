@@ -1,4 +1,4 @@
-package io.selenium.groups;
+package metalloid.groups;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

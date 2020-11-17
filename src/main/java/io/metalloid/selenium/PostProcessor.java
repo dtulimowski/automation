@@ -1,4 +1,4 @@
-package io.selenium;
+package metalloid.selenium;
 
 import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
